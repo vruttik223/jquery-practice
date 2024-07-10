@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        #abc{
+            width: 100%;
+            background-color: #ddd;
+        }
+        /* #abc{
+            display: none;
+        } */
+    </style>
+</head>
+<body>
+
+    <div id="abc">
+        <h1>Hello I am Vruttik</h1>
+        <p>I love to Build Websites</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit rerum, unde sapiente at, quos ipsam magnam eligendi, inventore id ea aliquid. Modi rem reprehenderit voluptates vitae, sint quisquam consequatur molestias.</p>
+    </div>
+
+    <button id="hide">fadein</button>
+    <button id="show">fadeout</button>
+    <button id="toogle">toggle work both in/out</button>
+    <button id="fadeto">fadeto</button>
+
+
+
+
+    <script>
+        $("#hide").click(function(){
+            $("#abc").slideUp(3000)
+
+        })
+
+        $("#show").click(function(){
+            $("#abc").slideDown(2000)
+
+        })
+
+
+        $("#toogle").click(function(){
+            $("#abc").slideToggle(2000)
+        })
+        $("#fadeto").click(function(){
+            $("#abc").fadeTo(2000,0.1)
+        })
+    </script>
+
+
+    
+</body>
+</html>
